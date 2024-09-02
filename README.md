@@ -1,2 +1,2 @@
 # codeOver because it is so over:/
-# how do you edit a README file
+# where you go i go, what you see i see 
