@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
-          <Link href="/">Skibidi Bar</Link>
+          <Link href="/">Skibidi Bar</Link> 
         </div>
         <div className="md:hidden" onClick={toggleMenu}>
           <button className="text-white focus:outline-none">
@@ -43,7 +43,7 @@ const Navbar = () => {
             <Link href="/about">About</Link>
           </li>
           <li className="text-white md:ml-4">
-            <Link href="/services">Services</Link>
+            <Link href="/learning_hub">Guide</Link>
           </li>
           <li className="text-white md:ml-4">
             <Link href="/contact">Contact</Link>
