@@ -76,3 +76,7 @@ export const myAction = action({
     });
   },
 });
+
+export default mutation(async ({ db }, { time, price }: { time: string, price: number }) => {
+  await db.insert('stocks', { time, price });
+});

@@ -13,9 +13,12 @@ export default defineSchema(
         subFieldOne: v.array(v.number()),
       }),
     }),
-    // This definition matches the example query and mutation code:
     numbers: defineTable({
       value: v.number(),
+    }),
+    stocks: defineTable({
+      time: v.string(),
+      price: v.number(),
     }),
   },
   // If you ever get an error about schema mismatch
