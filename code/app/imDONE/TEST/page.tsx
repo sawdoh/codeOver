@@ -17,7 +17,7 @@ const Page = () => {
   const [inputValue, setInputValue] = useState('');
 
   useEffect(() => {
-    const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=DY165DZG4Z15CZVY';
+    const url = 'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=IBM&interval=5min&apikey=7H22AMNI2195BEYY';
 
     console.log('Request initiated...');
     console.log('URL:', url);
