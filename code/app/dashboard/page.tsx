@@ -42,7 +42,7 @@ const Dashboard = () => {
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       <p>Welcome, {user?.firstName || 'User'}!</p>
       <SignOutButton >
-        <Button>Sign Out</Button>
+        <Button variant={'inverted'}>Sign Out</Button>
       </SignOutButton>
       <div className="mt-6">
         <h2 className="text-xl font-semibold mb-4">Stock Graph</h2>

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/nextjs';
+import '@/app/template/navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,10 +13,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-4">
+    <nav className="bg-gray-800 p-4" id='navbar'>
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
-          <Link href="/">Skibidi Bar</Link> 
+          <Link href="/"><span id='Logo'>NPT</span></Link> 
         </div>
         <div className="md:hidden" onClick={toggleMenu}>
           <button className="text-white focus:outline-none">
@@ -36,28 +37,32 @@ const Navbar = () => {
           </button>
         </div>
         <ul className={`md:flex md:items-center ${isOpen ? 'block' : 'hidden'}`}>
-          <li className="text-white md:ml-4">
-            <Link href="/">Home</Link>
-          </li>
-          <li className="text-white md:ml-4">
-            <Link href="/about">About</Link>
-          </li>
-          <li className="text-white md:ml-4">
-            <Link href="/learning_hub">Guide</Link>
-          </li>
-          <li className="text-white md:ml-4">
-            <Link href="/contact">Contact</Link>
-          </li>
-          <SignedOut>
-            <li className="text-white md:ml-4">
+        <li>
+          <Link href="/" className="text-white md:ml-4">Home</Link>
+        </li>
+        <li>
+          <Link href="/about" className="text-white md:ml-4">About</Link>
+        </li>
+        <li>
+          <Link href="/learning_hub" className="text-white md:ml-4">Guide</Link>
+        </li>
+        <li>
+          <Link href="/contact" className="text-white md:ml-4">Contact</Link>
+        </li>
+        <SignedOut>
+          <li>
+            <div className="text-white md:ml-4">
               <SignInButton />
-            </li>
-          </SignedOut>
-          <SignedIn>
-            <li className="text-white md:ml-4">
+            </div>
+          </li>
+        </SignedOut>
+        <SignedIn>
+          <li>
+            <div className="text-white md:ml-4">
               <UserButton />
-            </li>
-          </SignedIn>
+            </div>
+          </li>
+        </SignedIn>
         </ul>
       </div>
     </nav>
