@@ -1143,9 +1143,9 @@ const Dashboard = () => {
   useEffect(() => {
     if (trendProgressed) {
       if (lastAction === 'buy') {
-        setPopupMessage('Wrong! You bought stock before progressing the trend.');
+        setPopupMessage('Wrong! You bought stock before (the dip) "progressing the trend".');
       } else if (lastAction === 'sell') {
-        setPopupMessage('Correct! You sold stock after progressing the trend.');
+        setPopupMessage('Correct! You sold stock before (the dip) "progressing the trend".');
       }
     }
   }, [trendProgressed]);
