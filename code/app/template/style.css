@@ -16,6 +16,10 @@ body {
     justify-content: center;
 }
 
+#picture {
+    box-shadow: 0 4px 8px rgb(59, 59, 59);
+}
+
 #welcome {
     padding: 20px;
     font-weight: bold;
@@ -51,13 +55,60 @@ body {
     font-weight: bold;
     border-radius: 20px;
     padding: 25px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 120px;
+    padding-right: 120px;
     background-color: #40403f;
     color: white;
+    transition: 0.2s;
+    font-size: 20px;
 }
 
 #buttoner:hover {
     background-color: white;
     color: black;
+}
+
+#buttie {
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-left: 3%;
+    border: solid white 1px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+#buttie:hover {
+    background-color: white;
+    color: black;
+}
+
+.simulations {
+    padding: 4rem;
+    background-color: #1a1a19;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head {
+    align-items: center;
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sub {
+    display: block;
+    text-align: center;
+    align-items: center;
+    color: #8f8d8a;
+    font-weight: 600;
 }

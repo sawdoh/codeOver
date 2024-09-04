@@ -1,16 +1,22 @@
 
 "use client"; 
+import Link from 'next/link';
+import { useRef } from 'react';
 import Image from "next/image";
 import './template/style.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useUser, SignInButton, SignOutButton } from '@clerk/nextjs';
 import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
 import { ArrowRight } from 'lucide-react';
 
 export default function Home() {
   const { user, isLoaded } = useUser();
   const router = useRouter();
+  const simulationRef = useRef<HTMLDivElement>(null);
+
+<link rel="icon" href="https://i.imgflip.com/8h26xs.png"></link>
 
   useEffect(() => {
     if (isLoaded && user) {
@@ -24,35 +30,40 @@ export default function Home() {
     return <p>Loading...</p>;
   }
 
+  const handleScrollToSimulation = () => {
+    simulationRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="parent-container">
       <div className = "hero">
         <div className="image-container">
-          <img src="https://anderson-review.ucla.edu/wp-content/uploads/2024/02/AR-thumb-etf-capex.png" alt="Stocks going down"/>
+          <img src="https://wallpapers.com/images/hd/stock-market-green-red-candle-sticks-u8sypn2sbm22a0y3.jpg" alt="Stocks going down"  id='picture' style={{ width: '760px', height: '540px' }} />
         </div>
-        <div id='welcome'>
-        <p className="npt">
-          Welcome to NewsPaperTrade
-        </p>
-        <h3 className="word">
-          Become financially illiterate. Beat the markets with automated AI-driven trading strategies. Become a quant legend and deploy your strategy for millions of DeFi users.
-        </h3>
-        {!user ? (
-          <SignInButton mode="modal">
-            <Button variant='inverted' id="buttoner">
-              Start Now
-            </Button>
-          </SignInButton>
-        ) : (
-          <SignOutButton >
-            <Button variant='inverted'>
-              Sign Out
-              <ArrowRight className="h-4 w-4 ml-2"/>
-            </Button>
-          </SignOutButton>
-        )}
+          <div id='welcome'>
+            <p className="npt">
+              Welcome to NewsPaperTrade
+            </p>
+            <h3 className="word">
+              Become financially illiterate. Beat the markets with automated AI-driven trading strategies. Become a quant legend and deploy your strategy for millions of DeFi users.
+            </h3>
+            <Link href="/learning_hub">
+              <Button variant='inverted' id="buttoner">
+                Start Now
+              </Button>
+            </Link>
+            <button id='buttie' onClick={handleScrollToSimulation}>
+              Try Simulator
+            </button>
         </div>
       </div>
+      <section className="simulations" ref={simulationRef}>
+        <div>
+          <h2 className="head">Simulation Strategies</h2>
+          <p className="sub">Simulation strategies have been live for 142 days.</p>
+          <Card />
+        </div>
+      </section>
     </div>
   );
 }

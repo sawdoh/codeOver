@@ -1,0 +1,120 @@
+/* Container for cards */
+.card-container {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Individual card */
+.card {
+    background-color: #313131; /* Dark background */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    height: 510px;
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    transition: 0.2s;
+}
+
+.card:hover {
+    background-image: linear-gradient(rgb(117, 117, 117), rgb(35, 35, 35)); /* Dark background */
+    box-shadow: 0 4px 8px rgb(82, 82, 82);
+    color: #ffffff; /* White text */
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Card header with icon */
+.card-header {
+    padding: 0; /* Remove padding to ensure the image fills the header */
+    background-color: #2b2b2a;
+    text-align: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.title-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    background-color: #181818;
+}
+
+/* Card content */
+.card-content {
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: none;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    color: #b0b0b0; /* Lighter gray for descriptions */
+}
+
+/* Card stats */
+.card-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.stat {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Arrange label and value in a column */
+    align-items: center;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+.stat-value {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #4caf50; /* Green color for positive values */
+}
+
+/* View strategy button */
+.view-strategy-btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4caf50; /* Green button */
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.view-strategy-btn:hover {
+    background-color: #45a049;
+}
