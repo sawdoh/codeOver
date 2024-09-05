@@ -1,0 +1,91 @@
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #2c2c2c;
+    height: 100vh;
+    position: fixed;
+    z-index: 1100;
+    margin-top: -100px;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+    overflow-y: auto;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.sidebar.visible {
+    transform: translateX(0%);
+}
+
+.toggle-button {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1200;
+    top: 20px;
+    left: 20px;
+}
+
+.toggle-button.active {
+    display: none;
+  }
+
+.toggle-button:hover {
+    background-color: black;
+}
+
+.toggle-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar-list {
+    margin-top: 15px;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 2px;
+    margin-top: 0
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.sidebar ul li:hover {
+    background-color: #1b1b1b;
+    cursor: pointer;
+}
+
+.sidebar ul ul {
+    margin-left: 20px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+.close-button {
+    border: 1px solid white;
+    padding: 7px;
+}
+
+.close-button:hover {
+    background-color: black;
+}

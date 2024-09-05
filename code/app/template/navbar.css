@@ -1,0 +1,43 @@
+/* page.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar {
+    background-color: #1a1a19;
+    margin-bottom: 20px;
+    z-index: 1000;
+    }
+
+#Logo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    -webkit-text-stroke: 1px white;
+    color: white;
+    position: relative;
+    right: 300px;
+    top: 6px;
+    transition: 0.2s;
+}
+
+#Logo:hover {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.md\:ml-4 {
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.md\:ml-4:hover {
+    border-radius: 15px;
+    background-color: #2b2b2a;
+}

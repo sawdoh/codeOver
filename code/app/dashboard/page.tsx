@@ -384,8 +384,10 @@ const Dashboard = () => {
     <div className="max-w-3xl mx-auto p-4">
       <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
       <p>Welcome, {user?.firstName || 'User'}!</p>
-      <SignOutButton>
-        <Button>Sign Out</Button>
+
+      <SignOutButton >
+        <Button variant={'inverted'}>Sign Out</Button>
+
       </SignOutButton>
       <div className="mt-6" id="stock-graph-section">
         <h2 className="text-xl font-semibold mb-4">Stock Graph</h2>
