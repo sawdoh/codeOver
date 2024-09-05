@@ -38,7 +38,7 @@ export default function Home() {
     <div className="parent-container">
       <div className = "hero">
         <div className="image-container">
-          <img src="https://wallpapers.com/images/hd/stock-market-green-red-candle-sticks-u8sypn2sbm22a0y3.jpg" alt="Stocks going down"  id='picture' style={{ width: '760px', height: '540px' }} />
+          <img src="https://media.istockphoto.com/id/1487894858/photo/candlestick-chart-and-data-of-financial-market.jpg?s=612x612&w=0&k=20&c=wZ6vVmbm4BV2JOePSnNNz-0aFVOJZ0P9nhdeOMGUg5I=" alt="Stocks going down"  id='picture' style={{ width: '760px', height: '540px' }} />
         </div>
           <div id='welcome'>
             <p className="npt">
@@ -57,13 +57,13 @@ export default function Home() {
             </button>
         </div>
       </div>
-      <section className="simulations" ref={simulationRef}>
+      <div className="simulations" ref={simulationRef}>
         <div>
           <h2 className="head">Simulation Strategies</h2>
           <p className="sub">Simulation strategies have been live for 142 days.</p>
           <Card />
         </div>
-      </section>
+      </div>
     </div>
   );
 }

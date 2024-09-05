@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4" id='navbar'>
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white text-lg font-bold">
-          <Link href="/" ><span id='Logo'>NYP</span></Link>
+          <Link href="/" ><span id='Logo'>NPT</span></Link>
         </div>
         <div className="md:hidden" onClick={toggleMenu}>
           <button className="text-white focus:outline-none">
@@ -41,13 +41,10 @@ const Navbar = () => {
           <Link href="/" className="text-white md:ml-4">Home</Link>
         </li>
         <li>
+          <Link href="/learning_hub/chapter_1" className="text-white md:ml-4">Guide</Link>
+        </li>
+        <li>
           <Link href="/about" className="text-white md:ml-4">About</Link>
-        </li>
-        <li>
-          <Link href="/learning_hub" className="text-white md:ml-4">Guide</Link>
-        </li>
-        <li>
-          <Link href="/contact" className="text-white md:ml-4">Contact</Link>
         </li>
         <SignedOut>
           <li>
