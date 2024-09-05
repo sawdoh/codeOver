@@ -64,8 +64,8 @@ const Guide = () => {
         <section className="LHsection" id='options-derivatives'>
           <h2 className='text-4xl font-bold title'>Options and Derivatives</h2>
           <p className="stock">Options and derivatives are more advanced types of investments. They allow you to bet on the future price of an asset, like a stock or commodity, without actually owning the asset.</p>
-            <ul>➣ Options: A contract that gives you the right, but not the obligation, to buy or sell a stock at a specific price within a certain timeframe. There are two types: calls (betting the price will go up) and puts (betting the price will go down).</ul>
-            <br />  
+          <ul>➣ Options: A contract that gives you the right, but not the obligation, to buy or sell a stock at a specific price within a certain timeframe. There are two types: calls (betting the price will go up) and puts (betting the price will go down).</ul>
+          <br />  
             <ul>➣ Derivatives: Financial instruments that derive their value from the price of an underlying asset. They are typically used by more advanced investors to hedge against risk or to speculate.</ul>
           <div className='chapter1-picture1'>
             <img src='https://www.investopedia.com/thmb/Ij90rBh0YfPpgcKQBqW6kNKVRKw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Option-fe0c0ee9204c4a50a281e728fb4c7cab-c571c7af929e4b8587c5a28ad9905f53.jpg' alt='Options-derivatives'></img>
