@@ -14,7 +14,7 @@ const Guide = () => {
         <section className="LHsection" >
           <h1 className="text-5xl font-bold title">Introduction to Investing and Trading in 2024</h1>
           <div className="stock">
-            The stock market can be thought of as a giant marketplace where people buy and sell pieces of ownership in companies, called "stocks" or "shares." Just like a market where you buy and sell goods, the stock market is where buyers and sellers come together to trade stocks.
+            The stock market can be thought of as a giant marketplace where people buy and sell pieces of ownership in companies, called stocks or shares. Just like a market where you buy and sell goods, the stock market is where buyers and sellers come together to trade stocks.
               <br />
               
               <div className='chapter1-picture1' >
