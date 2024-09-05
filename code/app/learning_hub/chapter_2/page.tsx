@@ -14,7 +14,7 @@ const Guide = () => {
         <section className="LHsection" >
           <h1 className="text-5xl font-bold title">Types of Investments</h1>
           <div className="stock">
-            Investing isn't just about buying stocks. There are several different types of investments, each with its own benefits and risks. Knowing the types of investments can help you decide which ones are best for your financial goals and risk tolerance.
+            Investing isnt just about buying stocks. There are several different types of investments, each with its own benefits and risks. Knowing the types of investments can help you decide which ones are best for your financial goals and risk tolerance.
 
               <br />
               
@@ -27,7 +27,7 @@ const Guide = () => {
         <section className='LHsection' id='stocks'>
          <h2 className='text-4xl font-bold title'>Stocks</h2>
           <p className="stock">
-            Stocks represent ownership in a company. When you buy a stock, you're buying a small piece of that company. If the company does well, the value of your stock may go up, and you can make money by selling it at a higher price. If the company doesnt perform well, the stock price can go down, and you could lose money.
+            Stocks represent ownership in a company. When you buy a stock, youre buying a small piece of that company. If the company does well, the value of your stock may go up, and you can make money by selling it at a higher price. If the company doesnt perform well, the stock price can go down, and you could lose money.
           </p> 
           <div id='stock-types'>
           <p>Common Stocks: Most people invest in common stocks. They usually give you voting rights in the companys decisions and can pay dividends (a share of the companys profits) to you. </p>
@@ -39,7 +39,7 @@ const Guide = () => {
         <section className='LHsection' id='bonds'>
          <h2 className='text-4xl font-bold title'>Bonds</h2>
           <p className="stock">
-            Bonds are essentially loans that you give to companies or governments. When you buy a bond, you're lending money to the issuer (like a company or government), and they promise to pay you back the amount with interest over a specific period.
+            Bonds are essentially loans that you give to companies or governments. When you buy a bond, youre lending money to the issuer (like a company or government), and they promise to pay you back the amount with interest over a specific period.
           </p> 
           <h1 className='keypoints'>Types of Bonds</h1>
             <li className='element'>Government Bonds: Issued by national governments (like U.S. Treasury bonds). They are considered very safe because the government is unlikely to default on its payments.</li>
