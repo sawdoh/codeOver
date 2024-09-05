@@ -27,7 +27,7 @@ const Guide = () => {
         <section className='LHsection' id='what-is-stock-market'>
          <h2 className='text-4xl font-bold title'>What is the Stock Market?</h2>
           <p className="stock">
-            The stock market is where shares of publicly listed companies are bought and sold. When you buy a share, you're buying a small part of that company. For example, if you buy shares of Apple, you own a tiny piece of Apple Inc. If Apple does well and makes more money, the value of your shares goes up. If it doesn't do well, the value of your shares could go down.
+            The stock market is where shares of publicly listed companies are bought and sold. When you buy a share, youre buying a small part of that company. For example, if you buy shares of Apple, you own a tiny piece of Apple Inc. If Apple does well and makes more money, the value of your shares goes up. If it doesnt do well, the value of your shares could go down.
           </p> 
           <h1 className='keypoints'>Key Points</h1>
             <li className='element'>Publicly Listed Companies - Companies that offer their shares for sale to the public.</li>
@@ -57,7 +57,7 @@ const Guide = () => {
             <ul className='element'>➣ Retail Investors - Everyday people like you and me who buy and sell stocks.</ul>
             <ul className='element'>➣ Institutional Investors - Large organizations like banks that invest huge sums of money.</ul>
             <ul className='element'>➣ Brokers - Middlemen who help investors buy and sell stocks for a fee.</ul>
-            <ul className='element'>➣ Market Makers - Firms that ensure there's enough buying and selling activity.</ul>
+            <ul className='element'>➣ Market Makers - Firms that ensure theres enough buying and selling activity.</ul>
           <div className='chapter1-picture1'>
             <img src='https://www.investopedia.com/thmb/J7jzKFwVJ-lfZN_iGkZX4y1LmUA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/broker.aspfinal-33e95da8ded44831a5703fdd6723f129.jpg' alt='Broker'></img>
           </div>
