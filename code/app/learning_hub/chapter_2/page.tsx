@@ -27,11 +27,11 @@ const Guide = () => {
         <section className='LHsection' id='stocks'>
          <h2 className='text-4xl font-bold title'>Stocks</h2>
           <p className="stock">
-            Stocks represent ownership in a company. When you buy a stock, you're buying a small piece of that company. If the company does well, the value of your stock may go up, and you can make money by selling it at a higher price. If the company doesn’t perform well, the stock price can go down, and you could lose money.
+            Stocks represent ownership in a company. When you buy a stock, you're buying a small piece of that company. If the company does well, the value of your stock may go up, and you can make money by selling it at a higher price. If the company doesnt perform well, the stock price can go down, and you could lose money.
           </p> 
           <div id='stock-types'>
-          <p>Common Stocks: Most people invest in common stocks. They usually give you voting rights in the company’s decisions and can pay dividends (a share of the company’s profits) to you. </p>
-          <p>Preferred Stocks: These usually don’t give you voting rights, but they offer a fixed dividend. They are seen as less risky than common stocks but offer less potential for big gains.</p>
+          <p>Common Stocks: Most people invest in common stocks. They usually give you voting rights in the companys decisions and can pay dividends (a share of the companys profits) to you. </p>
+          <p>Preferred Stocks: These usually dont give you voting rights, but they offer a fixed dividend. They are seen as less risky than common stocks but offer less potential for big gains.</p>
           </div>
 
         </section>
