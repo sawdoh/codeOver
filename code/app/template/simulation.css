@@ -1,0 +1,12 @@
+.simulation-container{
+    background-color: #151514;
+}
+
+.mt-4 {
+    border: 2px solid red;
+    margin-left: 20px;
+}
+
+.stock-button{
+    display: flex;
+}

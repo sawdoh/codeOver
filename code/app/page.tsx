@@ -18,13 +18,6 @@ export default function Home() {
 
 <link rel="icon" href="https://i.imgflip.com/8h26xs.png"></link>
 
-  useEffect(() => {
-    if (isLoaded && user) {
-      // Redirect to the dashboard if the user is authenticated
-      router.push('/dashboard');
-    }
-  }, [isLoaded, user, router]);
-
   if (!isLoaded) {
     // Optionally, display a loading indicator while checking authentication
     return <p>Loading...</p>;
@@ -47,7 +40,7 @@ export default function Home() {
             <h3 className="word">
               Become financially illiterate. Beat the markets with automated AI-driven trading strategies. Become a quant legend and deploy your strategy for millions of DeFi users.
             </h3>
-            <Link href="/learning_hub">
+            <Link href="learning_hub/chapter_1">
               <Button variant='inverted' id="buttoner">
                 Start Now
               </Button>

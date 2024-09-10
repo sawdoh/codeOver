@@ -141,12 +141,12 @@ const Dashboard = () => {
       if (lastAction === 'buy') {
         setPopupMessage(`
           Correct! You bought stock before the surge. 
-          <a href="#buy-stock-section" class="button-link bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Go to Buy Stock Section</a>
+          <a href="#buy-stock-section" class="button-link bg-green-500 text-white font-bold py-2 px-4 rounded">You correctly predicted that the company would continue to do well! </a>
         `);
       } else if (lastAction === 'sell') {
         setPopupMessage(`
           Wrong! You sold stock before the surge. 
-          <a href="#sell-stock-section" class="button-link bg-red-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Go to Sell Stock Section</a>
+          <a href="#sell-stock-section" class="button-link bg-red-500 text-white font-bold py-2 px-4 rounded">Why would you sell when a successful product is being released!</a>
         `);
       }
     }
@@ -154,16 +154,14 @@ const Dashboard = () => {
 
   return (
     <div className="max-w-3xl mx-auto p-4">
-      <h1 className="text-2xl font-bold mb-4">Dashboard</h1>
-      <p>Welcome, {user?.firstName || 'User'}!</p>
-      <SignOutButton>
-        <Button>Sign Out</Button>
-      </SignOutButton>
+      <h1 className="text-2xl font-bold mb-4">Fictional Simulation: Growing Company</h1>
+      <p>Welcome! In this simulation Envydia is releasing their new product, Dyson Vacuum cleaner, which is extremely well received. Refer to your portfolio to make your decisions!</p>
       <div className="mt-6" id="stock-graph-section">
         <h2 className="text-xl font-semibold mb-4">Stock Graph</h2>
         <p>Current Stock Price: ${currentStockPrice.toFixed(2)}</p>
         <StockChart data={stockData} />
         <Button
+          variant={'inverted'}
           className="mt-4"
           onClick={updateStockData}
           disabled={!transactionOccurred} // Disable if no transaction has occurred
@@ -171,6 +169,7 @@ const Dashboard = () => {
           Progress Stock Trend
         </Button>
         <Button
+          variant={'inverted'}
           className="mt-4 ml-2"
           onClick={replaySimulation}
           disabled={!trendProgressed}
@@ -178,39 +177,21 @@ const Dashboard = () => {
           Replay Simulation
         </Button>
       </div>
-      <div className="mt-6" id="buy-stock-section">
-        <h2 className="text-xl font-semibold mb-4">Portfolio</h2>
+      <br />
+      <h2 className="text-xl font-semibold mb-4">Portfolio</h2>
         <p>Balance: ${balance.toFixed(2)}</p>
         <p>Total Portfolio Value: ${calculatePortfolioValue().toFixed(2)}</p>
-        <input
-          type="number"
-          placeholder="Number of shares"
-          className="border p-2 mt-4"
-          id="numShares"
-        />
-        <Button
-          className="mt-4"
-          onClick={() => {
-            const numShares = parseInt((document.getElementById("numShares") as HTMLInputElement).value);
-            if (numShares > 0) buyStock(numShares);
-          }}
-          disabled={trendProgressed} // Disable if trend has been progressed
-        >
-          Buy Stock
-        </Button>
+      <div className="mt-4" id="buy-stock-section">
+        <h2 className="text-xl font-bold">Buy Stock</h2>
+        <Button variant={'inverted'} onClick={() => buyStock(1)}>Buy 1 Share</Button>
+        <Button variant={'inverted'} onClick={() => buyStock(5)} className="ml-2">Buy 5 Shares</Button>
       </div>
-      <div className="mt-6" id="sell-stock-section">
-        <Button
-          className="mt-4"
-          onClick={() => {
-            const numShares = parseInt((document.getElementById("numShares") as HTMLInputElement).value);
-            if (numShares > 0) sellStock(numShares);
-          }}
-          disabled={trendProgressed} // Disable if trend has been progressed
-        >
-          Sell Stock
-        </Button>
-        <div className="mt-4">
+      <div className="mt-4" id="sell-stock-section">
+        <h2 className="text-xl font-bold">Sell Stock</h2>
+        <Button variant={'inverted'} onClick={() => sellStock(1)}>Sell 1 Share</Button>
+        <Button variant={'inverted'} onClick={() => sellStock(5)} className="ml-2">Sell 5 Shares</Button>
+      </div>
+      <div className="mt-4">
           <h3 className="text-lg font-semibold">Holdings:</h3>
           {portfolio.length > 0 ? (
             portfolio.map((item, index) => (
@@ -222,10 +203,9 @@ const Dashboard = () => {
             <p>No holdings</p>
           )}
         </div>
-      </div>
       {popupMessage && (
         <div
-          className="mt-4 p-4 rounded shadow bg-yellow-200"
+          className="fixed bottom-4 right-4 bg-black text-white p-4 rounded"
           dangerouslySetInnerHTML={{ __html: popupMessage }}
         />
       )}
